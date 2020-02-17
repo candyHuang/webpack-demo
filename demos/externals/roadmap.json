@@ -1,0 +1,5 @@
+{
+  "deps": {
+    "ns/demo.js": ["demo.css", "demo.js"]
+  }
+}

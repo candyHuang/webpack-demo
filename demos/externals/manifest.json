@@ -1,0 +1,994 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.41.2",
+  "hash": "aacb61fe72da02ac1c90",
+  "time": 1075,
+  "builtAt": 1576724313304,
+  "publicPath": "",
+  "outputPath": "D:\\demo\\webpack-demo\\demos\\externals\\dist",
+  "assetsByChunkName": {
+    "demo": "ns/demo.js"
+  },
+  "assets": [
+    {
+      "name": "ns/1.js",
+      "size": 11082,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "ns/demo.js",
+      "size": 9169,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "demo"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "demo": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "ns/demo.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "demo": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "ns/demo.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 252,
+      "names": [
+        "demo"
+      ],
+      "files": [
+        "ns/demo.js"
+      ],
+      "hash": "aaaa753e965039ba9707",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        1
+      ],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 1,
+          "size": 140,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/index.js",
+              "loc": "demo"
+            }
+          ],
+          "providedExports": [
+            "fetchA"
+          ],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import add from './math';\nexport function fetchA() {\n  import('./a').then(function (A) {\n    console.log(A);\n  });\n}\nconsole.log(add(1, 2));"
+        },
+        {
+          "id": 1,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\math.js",
+          "name": "./src/math.js",
+          "index": 1,
+          "index2": 0,
+          "size": 70,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "issuerId": 0,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./math",
+              "loc": "1:0-25"
+            },
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "./math",
+              "loc": "7:12-15"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "var add = function add(a, b) {\n  return a + b;\n};\n\nexport default add;"
+        },
+        {
+          "id": 3,
+          "identifier": "external \"Vue\"",
+          "name": "external \"Vue\"",
+          "index": 3,
+          "index2": 2,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "issuerId": 2,
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "vue",
+              "loc": "1:0-22"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "vue",
+              "loc": "5:27-30"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "demo",
+          "request": "./src/index.js",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 9167,
+      "names": [],
+      "files": [
+        "ns/1.js"
+      ],
+      "hash": "4a54b88b61ba21808f01",
+      "siblings": [],
+      "parents": [
+        0
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 2,
+          "index2": 7,
+          "size": 263,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "issuerId": 0,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "import()",
+              "userRequest": "./a",
+              "loc": "3:2-15"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import Vue from 'vue';\nimport upperCamelCase from 'uppercamelcase';\nimport objectPath from 'object-path';\nimport A1 from './a1';\nconsole.log('Vue in a.js', Vue);\nupperCamelCase('foo-bar');\nconsole.log('A1 in a.js', A1, objectPath);\nexport default {\n  name: 'A'\n};"
+        },
+        {
+          "id": 4,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+          "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+          "index": 4,
+          "index2": 4,
+          "size": 199,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "issuerId": 2,
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "uppercamelcase",
+              "loc": "2:0-44"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "uppercamelcase",
+              "loc": "6:0-14"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "'use strict';\nconst camelCase = require('camelcase');\n\nmodule.exports = function () {\n\tconst cased = camelCase.apply(camelCase, arguments);\n\treturn cased.charAt(0).toUpperCase() + cased.slice(1);\n};\n"
+        },
+        {
+          "id": 5,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\node_modules\\camelcase\\index.js",
+          "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/node_modules/camelcase/index.js",
+          "index": 5,
+          "index2": 3,
+          "size": 1419,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+          "issuerId": 4,
+          "issuerName": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "name": "./src/a.js"
+            },
+            {
+              "id": 4,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+              "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 4,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+              "module": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+              "moduleName": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+              "type": "cjs require",
+              "userRequest": "camelcase",
+              "loc": "2:18-38"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3,
+          "source": "'use strict';\n\nfunction preserveCamelCase(str) {\n\tlet isLastCharLower = false;\n\tlet isLastCharUpper = false;\n\tlet isLastLastCharUpper = false;\n\n\tfor (let i = 0; i < str.length; i++) {\n\t\tconst c = str[i];\n\n\t\tif (isLastCharLower && /[a-zA-Z]/.test(c) && c.toUpperCase() === c) {\n\t\t\tstr = str.substr(0, i) + '-' + str.substr(i);\n\t\t\tisLastCharLower = false;\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = true;\n\t\t\ti++;\n\t\t} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(c) && c.toLowerCase() === c) {\n\t\t\tstr = str.substr(0, i - 1) + '-' + str.substr(i - 1);\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = false;\n\t\t\tisLastCharLower = true;\n\t\t} else {\n\t\t\tisLastCharLower = c.toLowerCase() === c;\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = c.toUpperCase() === c;\n\t\t}\n\t}\n\n\treturn str;\n}\n\nmodule.exports = function (str) {\n\tif (arguments.length > 1) {\n\t\tstr = Array.from(arguments)\n\t\t\t.map(x => x.trim())\n\t\t\t.filter(x => x.length)\n\t\t\t.join('-');\n\t} else {\n\t\tstr = str.trim();\n\t}\n\n\tif (str.length === 0) {\n\t\treturn '';\n\t}\n\n\tif (str.length === 1) {\n\t\treturn str.toLowerCase();\n\t}\n\n\tif (/^[a-z0-9]+$/.test(str)) {\n\t\treturn str;\n\t}\n\n\tconst hasUpperCase = str !== str.toLowerCase();\n\n\tif (hasUpperCase) {\n\t\tstr = preserveCamelCase(str);\n\t}\n\n\treturn str\n\t\t.replace(/^[_.\\- ]+/, '')\n\t\t.toLowerCase()\n\t\t.replace(/[_.\\- ]+(\\w|$)/g, (m, p1) => p1.toUpperCase());\n};\n"
+        },
+        {
+          "id": 6,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\object-path\\index.js",
+          "name": "D:/demo/webpack-demo/node_modules/object-path/index.js",
+          "index": 6,
+          "index2": 5,
+          "size": 7254,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "issuerId": 2,
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "object-path",
+              "loc": "3:0-37"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "object-path",
+              "loc": "7:30-40"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "(function (root, factory){\n  'use strict';\n\n  /*istanbul ignore next:cant test*/\n  if (typeof module === 'object' && typeof module.exports === 'object') {\n    module.exports = factory();\n  } else if (typeof define === 'function' && define.amd) {\n    // AMD. Register as an anonymous module.\n    define([], factory);\n  } else {\n    // Browser globals\n    root.objectPath = factory();\n  }\n})(this, function(){\n  'use strict';\n\n  var toStr = Object.prototype.toString;\n  function hasOwnProperty(obj, prop) {\n    if(obj == null) {\n      return false\n    }\n    //to handle objects with null prototypes (too edge case?)\n    return Object.prototype.hasOwnProperty.call(obj, prop)\n  }\n\n  function isEmpty(value){\n    if (!value) {\n      return true;\n    }\n    if (isArray(value) && value.length === 0) {\n        return true;\n    } else if (typeof value !== 'string') {\n        for (var i in value) {\n            if (hasOwnProperty(value, i)) {\n                return false;\n            }\n        }\n        return true;\n    }\n    return false;\n  }\n\n  function toString(type){\n    return toStr.call(type);\n  }\n\n  function isObject(obj){\n    return typeof obj === 'object' && toString(obj) === \"[object Object]\";\n  }\n\n  var isArray = Array.isArray || function(obj){\n    /*istanbul ignore next:cant test*/\n    return toStr.call(obj) === '[object Array]';\n  }\n\n  function isBoolean(obj){\n    return typeof obj === 'boolean' || toString(obj) === '[object Boolean]';\n  }\n\n  function getKey(key){\n    var intKey = parseInt(key);\n    if (intKey.toString() === key) {\n      return intKey;\n    }\n    return key;\n  }\n\n  function factory(options) {\n    options = options || {}\n\n    var objectPath = function(obj) {\n      return Object.keys(objectPath).reduce(function(proxy, prop) {\n        if(prop === 'create') {\n          return proxy;\n        }\n\n        /*istanbul ignore else*/\n        if (typeof objectPath[prop] === 'function') {\n          proxy[prop] = objectPath[prop].bind(objectPath, obj);\n        }\n\n        return proxy;\n      }, {});\n    };\n\n    function hasShallowProperty(obj, prop) {\n      return (options.includeInheritedProps || (typeof prop === 'number' && Array.isArray(obj)) || hasOwnProperty(obj, prop))\n    }\n\n    function getShallowProperty(obj, prop) {\n      if (hasShallowProperty(obj, prop)) {\n        return obj[prop];\n      }\n    }\n\n    function set(obj, path, value, doNotReplace){\n      if (typeof path === 'number') {\n        path = [path];\n      }\n      if (!path || path.length === 0) {\n        return obj;\n      }\n      if (typeof path === 'string') {\n        return set(obj, path.split('.').map(getKey), value, doNotReplace);\n      }\n      var currentPath = path[0];\n      var currentValue = getShallowProperty(obj, currentPath);\n      if (path.length === 1) {\n        if (currentValue === void 0 || !doNotReplace) {\n          obj[currentPath] = value;\n        }\n        return currentValue;\n      }\n\n      if (currentValue === void 0) {\n        //check if we assume an array\n        if(typeof path[1] === 'number') {\n          obj[currentPath] = [];\n        } else {\n          obj[currentPath] = {};\n        }\n      }\n\n      return set(obj[currentPath], path.slice(1), value, doNotReplace);\n    }\n\n    objectPath.has = function (obj, path) {\n      if (typeof path === 'number') {\n        path = [path];\n      } else if (typeof path === 'string') {\n        path = path.split('.');\n      }\n\n      if (!path || path.length === 0) {\n        return !!obj;\n      }\n\n      for (var i = 0; i < path.length; i++) {\n        var j = getKey(path[i]);\n\n        if((typeof j === 'number' && isArray(obj) && j < obj.length) ||\n          (options.includeInheritedProps ? (j in Object(obj)) : hasOwnProperty(obj, j))) {\n          obj = obj[j];\n        } else {\n          return false;\n        }\n      }\n\n      return true;\n    };\n\n    objectPath.ensureExists = function (obj, path, value){\n      return set(obj, path, value, true);\n    };\n\n    objectPath.set = function (obj, path, value, doNotReplace){\n      return set(obj, path, value, doNotReplace);\n    };\n\n    objectPath.insert = function (obj, path, value, at){\n      var arr = objectPath.get(obj, path);\n      at = ~~at;\n      if (!isArray(arr)) {\n        arr = [];\n        objectPath.set(obj, path, arr);\n      }\n      arr.splice(at, 0, value);\n    };\n\n    objectPath.empty = function(obj, path) {\n      if (isEmpty(path)) {\n        return void 0;\n      }\n      if (obj == null) {\n        return void 0;\n      }\n\n      var value, i;\n      if (!(value = objectPath.get(obj, path))) {\n        return void 0;\n      }\n\n      if (typeof value === 'string') {\n        return objectPath.set(obj, path, '');\n      } else if (isBoolean(value)) {\n        return objectPath.set(obj, path, false);\n      } else if (typeof value === 'number') {\n        return objectPath.set(obj, path, 0);\n      } else if (isArray(value)) {\n        value.length = 0;\n      } else if (isObject(value)) {\n        for (i in value) {\n          if (hasShallowProperty(value, i)) {\n            delete value[i];\n          }\n        }\n      } else {\n        return objectPath.set(obj, path, null);\n      }\n    };\n\n    objectPath.push = function (obj, path /*, values */){\n      var arr = objectPath.get(obj, path);\n      if (!isArray(arr)) {\n        arr = [];\n        objectPath.set(obj, path, arr);\n      }\n\n      arr.push.apply(arr, Array.prototype.slice.call(arguments, 2));\n    };\n\n    objectPath.coalesce = function (obj, paths, defaultValue) {\n      var value;\n\n      for (var i = 0, len = paths.length; i < len; i++) {\n        if ((value = objectPath.get(obj, paths[i])) !== void 0) {\n          return value;\n        }\n      }\n\n      return defaultValue;\n    };\n\n    objectPath.get = function (obj, path, defaultValue){\n      if (typeof path === 'number') {\n        path = [path];\n      }\n      if (!path || path.length === 0) {\n        return obj;\n      }\n      if (obj == null) {\n        return defaultValue;\n      }\n      if (typeof path === 'string') {\n        return objectPath.get(obj, path.split('.'), defaultValue);\n      }\n\n      var currentPath = getKey(path[0]);\n      var nextObj = getShallowProperty(obj, currentPath)\n      if (nextObj === void 0) {\n        return defaultValue;\n      }\n\n      if (path.length === 1) {\n        return nextObj;\n      }\n\n      return objectPath.get(obj[currentPath], path.slice(1), defaultValue);\n    };\n\n    objectPath.del = function del(obj, path) {\n      if (typeof path === 'number') {\n        path = [path];\n      }\n\n      if (obj == null) {\n        return obj;\n      }\n\n      if (isEmpty(path)) {\n        return obj;\n      }\n      if(typeof path === 'string') {\n        return objectPath.del(obj, path.split('.'));\n      }\n\n      var currentPath = getKey(path[0]);\n      if (!hasShallowProperty(obj, currentPath)) {\n        return obj;\n      }\n\n      if(path.length === 1) {\n        if (isArray(obj)) {\n          obj.splice(currentPath, 1);\n        } else {\n          delete obj[currentPath];\n        }\n      } else {\n        return objectPath.del(obj[currentPath], path.slice(1));\n      }\n\n      return obj;\n    }\n\n    return objectPath;\n  }\n\n  var mod = factory();\n  mod.create = factory;\n  mod.withInheritedProps = factory({includeInheritedProps: true})\n  return mod;\n});\n"
+        },
+        {
+          "id": 7,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a1.js",
+          "name": "./src/a1.js",
+          "index": 7,
+          "index2": 6,
+          "size": 32,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "issuerId": 2,
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a1",
+              "loc": "4:0-22"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a1",
+              "loc": "7:26-28"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export default {\n  name: 'A1'\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "moduleName": "./src/index.js",
+          "loc": "3:2-15",
+          "request": "./a",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+      "name": "./src/index.js",
+      "index": 0,
+      "index2": 1,
+      "size": 140,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/index.js",
+          "loc": "demo"
+        }
+      ],
+      "providedExports": [
+        "fetchA"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import add from './math';\nexport function fetchA() {\n  import('./a').then(function (A) {\n    console.log(A);\n  });\n}\nconsole.log(add(1, 2));"
+    },
+    {
+      "id": 1,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\math.js",
+      "name": "./src/math.js",
+      "index": 1,
+      "index2": 0,
+      "size": 70,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+      "issuerId": 0,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./math",
+          "loc": "1:0-25"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "harmony import specifier",
+          "userRequest": "./math",
+          "loc": "7:12-15"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "var add = function add(a, b) {\n  return a + b;\n};\n\nexport default add;"
+    },
+    {
+      "id": 2,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 2,
+      "index2": 7,
+      "size": 263,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+      "issuerId": 0,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "type": "import()",
+          "userRequest": "./a",
+          "loc": "3:2-15"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import Vue from 'vue';\nimport upperCamelCase from 'uppercamelcase';\nimport objectPath from 'object-path';\nimport A1 from './a1';\nconsole.log('Vue in a.js', Vue);\nupperCamelCase('foo-bar');\nconsole.log('A1 in a.js', A1, objectPath);\nexport default {\n  name: 'A'\n};"
+    },
+    {
+      "id": 3,
+      "identifier": "external \"Vue\"",
+      "name": "external \"Vue\"",
+      "index": 3,
+      "index2": 2,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+      "issuerId": 2,
+      "issuerName": "./src/a.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "vue",
+          "loc": "1:0-22"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "vue",
+          "loc": "5:27-30"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "id": 4,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+      "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+      "index": 4,
+      "index2": 4,
+      "size": 199,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+      "issuerId": 2,
+      "issuerName": "./src/a.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "uppercamelcase",
+          "loc": "2:0-44"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "uppercamelcase",
+          "loc": "6:0-14"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "'use strict';\nconst camelCase = require('camelcase');\n\nmodule.exports = function () {\n\tconst cased = camelCase.apply(camelCase, arguments);\n\treturn cased.charAt(0).toUpperCase() + cased.slice(1);\n};\n"
+    },
+    {
+      "id": 5,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\node_modules\\camelcase\\index.js",
+      "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/node_modules/camelcase/index.js",
+      "index": 5,
+      "index2": 3,
+      "size": 1419,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+      "issuerId": 4,
+      "issuerName": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js"
+        },
+        {
+          "id": 4,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+          "name": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 4,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\uppercamelcase\\index.js",
+          "module": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+          "moduleName": "D:/demo/webpack-demo/node_modules/uppercamelcase/index.js",
+          "type": "cjs require",
+          "userRequest": "camelcase",
+          "loc": "2:18-38"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 3,
+      "source": "'use strict';\n\nfunction preserveCamelCase(str) {\n\tlet isLastCharLower = false;\n\tlet isLastCharUpper = false;\n\tlet isLastLastCharUpper = false;\n\n\tfor (let i = 0; i < str.length; i++) {\n\t\tconst c = str[i];\n\n\t\tif (isLastCharLower && /[a-zA-Z]/.test(c) && c.toUpperCase() === c) {\n\t\t\tstr = str.substr(0, i) + '-' + str.substr(i);\n\t\t\tisLastCharLower = false;\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = true;\n\t\t\ti++;\n\t\t} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(c) && c.toLowerCase() === c) {\n\t\t\tstr = str.substr(0, i - 1) + '-' + str.substr(i - 1);\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = false;\n\t\t\tisLastCharLower = true;\n\t\t} else {\n\t\t\tisLastCharLower = c.toLowerCase() === c;\n\t\t\tisLastLastCharUpper = isLastCharUpper;\n\t\t\tisLastCharUpper = c.toUpperCase() === c;\n\t\t}\n\t}\n\n\treturn str;\n}\n\nmodule.exports = function (str) {\n\tif (arguments.length > 1) {\n\t\tstr = Array.from(arguments)\n\t\t\t.map(x => x.trim())\n\t\t\t.filter(x => x.length)\n\t\t\t.join('-');\n\t} else {\n\t\tstr = str.trim();\n\t}\n\n\tif (str.length === 0) {\n\t\treturn '';\n\t}\n\n\tif (str.length === 1) {\n\t\treturn str.toLowerCase();\n\t}\n\n\tif (/^[a-z0-9]+$/.test(str)) {\n\t\treturn str;\n\t}\n\n\tconst hasUpperCase = str !== str.toLowerCase();\n\n\tif (hasUpperCase) {\n\t\tstr = preserveCamelCase(str);\n\t}\n\n\treturn str\n\t\t.replace(/^[_.\\- ]+/, '')\n\t\t.toLowerCase()\n\t\t.replace(/[_.\\- ]+(\\w|$)/g, (m, p1) => p1.toUpperCase());\n};\n"
+    },
+    {
+      "id": 6,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\object-path\\index.js",
+      "name": "D:/demo/webpack-demo/node_modules/object-path/index.js",
+      "index": 6,
+      "index2": 5,
+      "size": 7254,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+      "issuerId": 2,
+      "issuerName": "./src/a.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "object-path",
+          "loc": "3:0-37"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "object-path",
+          "loc": "7:30-40"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "(function (root, factory){\n  'use strict';\n\n  /*istanbul ignore next:cant test*/\n  if (typeof module === 'object' && typeof module.exports === 'object') {\n    module.exports = factory();\n  } else if (typeof define === 'function' && define.amd) {\n    // AMD. Register as an anonymous module.\n    define([], factory);\n  } else {\n    // Browser globals\n    root.objectPath = factory();\n  }\n})(this, function(){\n  'use strict';\n\n  var toStr = Object.prototype.toString;\n  function hasOwnProperty(obj, prop) {\n    if(obj == null) {\n      return false\n    }\n    //to handle objects with null prototypes (too edge case?)\n    return Object.prototype.hasOwnProperty.call(obj, prop)\n  }\n\n  function isEmpty(value){\n    if (!value) {\n      return true;\n    }\n    if (isArray(value) && value.length === 0) {\n        return true;\n    } else if (typeof value !== 'string') {\n        for (var i in value) {\n            if (hasOwnProperty(value, i)) {\n                return false;\n            }\n        }\n        return true;\n    }\n    return false;\n  }\n\n  function toString(type){\n    return toStr.call(type);\n  }\n\n  function isObject(obj){\n    return typeof obj === 'object' && toString(obj) === \"[object Object]\";\n  }\n\n  var isArray = Array.isArray || function(obj){\n    /*istanbul ignore next:cant test*/\n    return toStr.call(obj) === '[object Array]';\n  }\n\n  function isBoolean(obj){\n    return typeof obj === 'boolean' || toString(obj) === '[object Boolean]';\n  }\n\n  function getKey(key){\n    var intKey = parseInt(key);\n    if (intKey.toString() === key) {\n      return intKey;\n    }\n    return key;\n  }\n\n  function factory(options) {\n    options = options || {}\n\n    var objectPath = function(obj) {\n      return Object.keys(objectPath).reduce(function(proxy, prop) {\n        if(prop === 'create') {\n          return proxy;\n        }\n\n        /*istanbul ignore else*/\n        if (typeof objectPath[prop] === 'function') {\n          proxy[prop] = objectPath[prop].bind(objectPath, obj);\n        }\n\n        return proxy;\n      }, {});\n    };\n\n    function hasShallowProperty(obj, prop) {\n      return (options.includeInheritedProps || (typeof prop === 'number' && Array.isArray(obj)) || hasOwnProperty(obj, prop))\n    }\n\n    function getShallowProperty(obj, prop) {\n      if (hasShallowProperty(obj, prop)) {\n        return obj[prop];\n      }\n    }\n\n    function set(obj, path, value, doNotReplace){\n      if (typeof path === 'number') {\n        path = [path];\n      }\n      if (!path || path.length === 0) {\n        return obj;\n      }\n      if (typeof path === 'string') {\n        return set(obj, path.split('.').map(getKey), value, doNotReplace);\n      }\n      var currentPath = path[0];\n      var currentValue = getShallowProperty(obj, currentPath);\n      if (path.length === 1) {\n        if (currentValue === void 0 || !doNotReplace) {\n          obj[currentPath] = value;\n        }\n        return currentValue;\n      }\n\n      if (currentValue === void 0) {\n        //check if we assume an array\n        if(typeof path[1] === 'number') {\n          obj[currentPath] = [];\n        } else {\n          obj[currentPath] = {};\n        }\n      }\n\n      return set(obj[currentPath], path.slice(1), value, doNotReplace);\n    }\n\n    objectPath.has = function (obj, path) {\n      if (typeof path === 'number') {\n        path = [path];\n      } else if (typeof path === 'string') {\n        path = path.split('.');\n      }\n\n      if (!path || path.length === 0) {\n        return !!obj;\n      }\n\n      for (var i = 0; i < path.length; i++) {\n        var j = getKey(path[i]);\n\n        if((typeof j === 'number' && isArray(obj) && j < obj.length) ||\n          (options.includeInheritedProps ? (j in Object(obj)) : hasOwnProperty(obj, j))) {\n          obj = obj[j];\n        } else {\n          return false;\n        }\n      }\n\n      return true;\n    };\n\n    objectPath.ensureExists = function (obj, path, value){\n      return set(obj, path, value, true);\n    };\n\n    objectPath.set = function (obj, path, value, doNotReplace){\n      return set(obj, path, value, doNotReplace);\n    };\n\n    objectPath.insert = function (obj, path, value, at){\n      var arr = objectPath.get(obj, path);\n      at = ~~at;\n      if (!isArray(arr)) {\n        arr = [];\n        objectPath.set(obj, path, arr);\n      }\n      arr.splice(at, 0, value);\n    };\n\n    objectPath.empty = function(obj, path) {\n      if (isEmpty(path)) {\n        return void 0;\n      }\n      if (obj == null) {\n        return void 0;\n      }\n\n      var value, i;\n      if (!(value = objectPath.get(obj, path))) {\n        return void 0;\n      }\n\n      if (typeof value === 'string') {\n        return objectPath.set(obj, path, '');\n      } else if (isBoolean(value)) {\n        return objectPath.set(obj, path, false);\n      } else if (typeof value === 'number') {\n        return objectPath.set(obj, path, 0);\n      } else if (isArray(value)) {\n        value.length = 0;\n      } else if (isObject(value)) {\n        for (i in value) {\n          if (hasShallowProperty(value, i)) {\n            delete value[i];\n          }\n        }\n      } else {\n        return objectPath.set(obj, path, null);\n      }\n    };\n\n    objectPath.push = function (obj, path /*, values */){\n      var arr = objectPath.get(obj, path);\n      if (!isArray(arr)) {\n        arr = [];\n        objectPath.set(obj, path, arr);\n      }\n\n      arr.push.apply(arr, Array.prototype.slice.call(arguments, 2));\n    };\n\n    objectPath.coalesce = function (obj, paths, defaultValue) {\n      var value;\n\n      for (var i = 0, len = paths.length; i < len; i++) {\n        if ((value = objectPath.get(obj, paths[i])) !== void 0) {\n          return value;\n        }\n      }\n\n      return defaultValue;\n    };\n\n    objectPath.get = function (obj, path, defaultValue){\n      if (typeof path === 'number') {\n        path = [path];\n      }\n      if (!path || path.length === 0) {\n        return obj;\n      }\n      if (obj == null) {\n        return defaultValue;\n      }\n      if (typeof path === 'string') {\n        return objectPath.get(obj, path.split('.'), defaultValue);\n      }\n\n      var currentPath = getKey(path[0]);\n      var nextObj = getShallowProperty(obj, currentPath)\n      if (nextObj === void 0) {\n        return defaultValue;\n      }\n\n      if (path.length === 1) {\n        return nextObj;\n      }\n\n      return objectPath.get(obj[currentPath], path.slice(1), defaultValue);\n    };\n\n    objectPath.del = function del(obj, path) {\n      if (typeof path === 'number') {\n        path = [path];\n      }\n\n      if (obj == null) {\n        return obj;\n      }\n\n      if (isEmpty(path)) {\n        return obj;\n      }\n      if(typeof path === 'string') {\n        return objectPath.del(obj, path.split('.'));\n      }\n\n      var currentPath = getKey(path[0]);\n      if (!hasShallowProperty(obj, currentPath)) {\n        return obj;\n      }\n\n      if(path.length === 1) {\n        if (isArray(obj)) {\n          obj.splice(currentPath, 1);\n        } else {\n          delete obj[currentPath];\n        }\n      } else {\n        return objectPath.del(obj[currentPath], path.slice(1));\n      }\n\n      return obj;\n    }\n\n    return objectPath;\n  }\n\n  var mod = factory();\n  mod.create = factory;\n  mod.withInheritedProps = factory({includeInheritedProps: true})\n  return mod;\n});\n"
+    },
+    {
+      "id": 7,
+      "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a1.js",
+      "name": "./src/a1.js",
+      "index": 7,
+      "index2": 6,
+      "size": 32,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+      "issuerId": 2,
+      "issuerName": "./src/a.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "name": "./src/a.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a1",
+          "loc": "4:0-22"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\demo\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\demo\\webpack-demo\\demos\\externals\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a1",
+          "loc": "7:26-28"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "export default {\n  name: 'A1'\n};"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node build.js"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "Android >= 4.0",
+    "iOS >= 7"
+  ]
+}

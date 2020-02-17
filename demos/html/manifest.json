@@ -1,0 +1,7 @@
+{
+  "prefixDeps": ["migu-sdk", "Vue", "vant"],
+  "entrypoints": "ns/demo.js",
+  "deps": {
+    "ns/demo.js": ["demo.css"]
+  }
+}

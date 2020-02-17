@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- <script
+      defer
+      src="http://h5dev.migu.cn:8080/app/v2/zt/2018/gio-test/gio.jsp?sleep=5000&name=a"
+    ></script>
+    <script
+      defer
+      src="http://h5dev.migu.cn:8080/app/v2/zt/2018/gio-test/gio.jsp?sleep=2000&name=b"
+    ></script> -->
+
+    <!-- <script src="./booter.js"></script>
+    <script>
+      booter.config();
+      booter.start();
+    </script> -->
+
+    <script>
+      console.log('inline sciprts');
+    </script>
+    <script>
+      (function() {
+        var frag = document.createDocumentFragment();
+
+        var node = document.createElement('script');
+        node.type = 'text/javascript';
+        node.async = false;
+        node.src = 'http://h5dev.migu.cn:8080/app/v2/zt/2018/gio-test/gio.jsp?sleep=5000&name=a';
+
+        var node2 = document.createElement('script');
+        node2.type = 'text/javascript';
+        node2.async = false;
+        node2.src = 'http://h5dev.migu.cn:8080/app/v2/zt/2018/gio-test/gio.jsp?sleep=1000&name=b';
+
+        frag.appendChild(node);
+        frag.appendChild(node2);
+
+        var s = document.getElementsByTagName('script')[0];
+
+        s.parentNode.insertBefore(node, s);
+        s.parentNode.insertBefore(node2, s);
+
+        // s.parentNode.insertBefore(frag, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <script>
+      window.addEventListener(
+        'load',
+        function() {
+          console.log('load事件回调');
+        },
+        false
+      );
+      document.addEventListener(
+        'DOMContentLoaded',
+        function() {
+          console.log('DOMContentLoaded回调');
+        },
+        false
+      );
+      console.log('body end');
+    </script>
+  </body>
+</html>
