@@ -19,7 +19,7 @@ export default {
 
   data() {
     return {
-      msg: "vue 2.0"
+      msg: "vue 2.1"
     };
   },
 

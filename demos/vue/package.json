@@ -9,6 +9,6 @@
     "iOS >= 7"
   ],
   "devDependencies": {
-    "cross-env": "^6.0.3"
+    "cross-env": "^7.0.0"
   }
 }
