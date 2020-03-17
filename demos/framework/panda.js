@@ -3,7 +3,7 @@ import { registerApp } from './register';
 import * as utils from './utils';
 
 function App(config) {
-  const { analysis, meta, bootstrap, onLaunch } = config;
+  const { analysis, meta, share, bootstrap, onLaunch } = config;
 
   // 数据上报（amber）
   if (analysis) {
@@ -17,7 +17,6 @@ function App(config) {
   if (share) {
     utils.setShare(share);
   }
-
   // 初始化根组件
   if (bootstrap) {
     if (typeof bootstrap === 'function') {

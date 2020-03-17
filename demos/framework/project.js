@@ -1,6 +1,7 @@
-import { App, registerApp, utils } from './panda';
+import { App, registerApp, utils } from './panda'; // MiguFramework
 
 App({
+  // bootstrap: 'app',
   bootstrap: function() {
     registerApp({
       component: 'app',
